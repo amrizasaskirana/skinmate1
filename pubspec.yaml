@@ -24,3 +24,7 @@ flutter:
 
   assets:
     - assets/logo.png
+    - assets/images/skinmate_logo.png
+    - assets/images/top_decoration.png
+    - assets/images/bottom_decor.png
+    - assets/images/star.png

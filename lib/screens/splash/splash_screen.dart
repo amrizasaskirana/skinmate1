@@ -1,40 +1,18 @@
-import 'package:flutter/material.dart';
-import 'dart:async';
-
-class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
-
-  @override
-  State<SplashScreen> createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen> {
-  @override
-  void initState() {
-    super.initState();
-    Timer(const Duration(seconds: 3), () {
-      Navigator.pushReplacementNamed(context, '/login');
-    });
-  }
-
+class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFF758C),
+      backgroundColor: Color(0xFF0F1D40), // biru gelap
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/logo.png', height: 120),
-            const SizedBox(height: 20),
-            const Text(
-              'SkinMate',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'Poppins',
-              ),
+            Image.asset('assets/images/skinmate_logo.png', width: 200),
+            SizedBox(height: 20),
+            Text(
+              'Log in & Let SkinMate Find Your Perfect Match!',
+              style: TextStyle(color: Colors.white, fontSize: 16),
+              textAlign: TextAlign.center,
             ),
           ],
         ),
